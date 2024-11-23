@@ -35,3 +35,21 @@ botones.forEach(boton => {
         }
     })
 })
+// Deshabilitar clic derecho
+document.addEventListener('contextmenu', function(e) {
+    e.preventDefault();
+});
+
+// Deshabilitar F12 (Herramientas de desarrollo)
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'F12') {
+        e.preventDefault();
+    }else if (e.ctrlKey && e.shiftKey && e.key === 'I') { 
+        e.preventDefault();
+    } else if (e.ctrlKey && e.shiftKey && e.key === 'J') { 
+        e.preventDefault();
+    }else if (e.ctrlKey && e.key === 'U') { 
+        e.preventDefault();
+    }
+});
+
