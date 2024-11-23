@@ -35,6 +35,8 @@ botones.forEach(boton => {
         }
     })
 })
+
+//Seguridad 
 // Deshabilitar clic derecho
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();
